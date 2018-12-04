@@ -1,0 +1,77 @@
+// Styling for the masthead
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url('../img/header.jpg');
+  background-position: center center;
+  @include background-cover;
+  hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-weight: 300;
+  }
+    .overlay{
+      position: absolute;
+      top:0; left: 0; z-index: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .bgrad-sherbert {
+      background: rgb(131,58,180);
+      background: linear-gradient(42deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 70%, rgba(252,176,69,1) 100%);
+    }
+    .bgrad-haze {
+      background: #52e2dd;
+      background: linear-gradient(90deg, #52e2dd, #8120c9);
+    }
+    .bgrad-coral {
+      background: rgb(255,76,233);
+      background: linear-gradient(42deg, rgba(255,76,233,1) 0%, rgba(255,176,71,1) 100%);
+    }
+    .bgrad-aqua {
+      background: #00d2ff;
+      background: linear-gradient(42deg, #00d2ff 0%, #3a47d5 100%);
+    }
+    .bgrad-cucumber {
+      background: #e3ffe7;
+      background: linear-gradient(42deg, #e3ffe7 0%, #d9e7ff 100%);
+    }
+    .bgrad-fuego {
+      background: #f09433;
+      background: linear-gradient(42deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    }
+    /* opacitites */
+    $opacities: 20;
+    
+    @while $opacities > 0 {
+      $opacity: $opacities * 5;
+      .op#{$opacity} {
+        opacity: $opacities * 5 / 100 !important;
+      }
+      $opacities: $opacities - 1;
+    }
+  @media (min-width: 768px) {
+    p {
+      font-size: 1.15rem;
+    }
+  }
+  @media (min-width: 992px) {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: 0;
+    padding-bottom: 0;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}

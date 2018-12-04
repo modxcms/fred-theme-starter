@@ -1,0 +1,5 @@
+id: 4
+name: fred-options-menu
+complete: 1
+theme: 1
+data: '{"remote":true,"settings":[{"name":"published","label":"Published","type":"toggle"},{"name":"anchortext","label":"Anchor Text","type":"text","value":null},{"name":"bgcolor","label":"Background","type":"colorswatch","options":[{"label":"Dark Gray","color":"#212529","value":"bg-dark"},{"label":"White","color":"white","value":"bg-white"},{"label":"Orange","color":"#f05f40","value":"bg-primary"},{"label":"Light Gray","color":"#6c757d","value":"bg-secondary"}]},{"name":"textcolor","label":"Text","type":"colorswatch","options":[{"label":"Dark Gray","color":"#212529","value":""},{"label":"White","color":"white","value":"text-white"},{"label":"Orange","color":"#f05f40","value":"text-primary"},{"label":"Light Gray","color":"#6c757d","value":"text-secondary"}]}]}'

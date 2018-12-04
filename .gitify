@@ -1,0 +1,79 @@
+data_directory: _data/
+backup_directory: _backup/
+data:
+    fred_themes:
+        class: FredTheme
+        primary: id
+        exclude_keys: ['config']
+        package: fred
+    fred_element_categories:
+        class: FredElementCategory
+        primary: id
+    fred_element_option_sets:
+        class: FredElementOptionSet
+        primary: id
+        extension: .json
+    fred_element_rte_configs:
+        class: FredElementRTEConfig
+        primary: id
+        extension: .json
+    fred_elements:
+        class: FredElement
+        primary: id
+        extension: .html
+    fred_blueprint_categories:
+        class: FredBlueprintCategory
+        primary: id
+    fred_blueprints:
+        class: FredBlueprint
+        primary: id
+        extension: .json
+    fred_themed_template:
+        class: FredThemedTemplate
+        primary: 'template'
+    namespaces:
+        class: modNamespace
+        primary: name
+        where:
+            - 'name': 'site'
+    system_settings:
+        class: modSystemSetting
+        primary: key
+        where:
+            - 'namespace': 'site'
+        exclude_keys:
+            - editedon
+            - createdon
+            - value
+    categories:
+        class: modCategory
+        primary: category
+        where:
+            - 'category': 'One-pager Theme'
+    templates:
+        class: modTemplate
+        primary: templatename
+        where:
+            - 'templatename': 'Fred'
+        extension: .html
+    chunks:
+        class: modChunk
+        primary: name
+        where:
+            - 'category': 11
+        extension: .html
+    snippets:
+        class: modSnippet
+        primary: name
+        where:
+            - 'category': 11
+        extension: .php
+packages:
+        modx.com:
+            service_url: http://rest.modx.com/extras/
+            packages:
+                - pThumb
+                - resizer
+                - Ace
+                - 'Fred TinyMCE RTE'
+                - 'Fred Font Awesome 5 Icon Editor'

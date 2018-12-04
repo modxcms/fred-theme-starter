@@ -1,0 +1,5 @@
+id: 5
+name: hero
+complete: 1
+theme: 1
+data: '{"remote":true,"settings":[{"name":"fullscreen","type":"toggle","label":"Full Screen","value":false},{"name":"parallax","type":"toggle","label":"Parallax","value":false},{"name":"hero_bg","label":"Background Image","type":"image","value":"\/assets\/themes\/starter\/img\/Th1BJpqoSWSjwfPGTBJjPg.jpg"},{"fred-import":"color-swatches"},{"label":"Overlay Opacity","name":"olopacity","type":"slider","value":60,"min":5,"max":100,"step":5},{"name":"center","label":"Center Text","type":"toggle","value":false},{"label":"Copy Width","name":"colwidth","type":"slider","value":9,"min":1,"max":12},{"name":"coloffset","label":"Block Offset","type":"slider","value":0,"min":0,"max":11},{"name":"ptop","label":"Top Padding","type":"slider","value":0,"min":0,"max":9},{"name":"pbot","label":"Bottom Padding","type":"slider","value":0,"min":0,"max":9},{"group":"Button 1","settings":[{"name":"hero_btn_link","label":"Button Link","type":"page"},{"name":"hero_btn_text","label":"Button Text"}]},{"group":"Button 2","settings":[{"name":"hero_btn2_link","label":"Button Link","type":"page"},{"name":"hero_btn2_text","label":"Button Text"}]}]}'
