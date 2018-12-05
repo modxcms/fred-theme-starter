@@ -75,5 +75,6 @@ packages:
                 - pThumb
                 - resizer
                 - Ace
+                - Fred
                 - 'Fred TinyMCE RTE'
                 - 'Fred Font Awesome 5 Icon Editor'
