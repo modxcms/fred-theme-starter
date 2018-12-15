@@ -2,4 +2,7 @@ id: 2
 name: fred-options-portfolio
 complete: 1
 theme: 1
-data: '{"remote":true,"settings":[{"name":"published","label":"Published","type":"toggle"},{"name":"title","label":"Title","type":"text","value":"Project"},{"name":"image","label":"Image","type":"image","value":"\/assets\/themes\/starter\/img\/fred2.jpg"},{"name":"category","label":"Category","type":"select","options":{"Web":"Web","Print":"Print","Photography":"Photography"},"value":"Web"}]}'
+
+-----
+
+{"remote":true,"settings":[{"name":"published","label":"Published","type":"toggle"},{"name":"title","label":"Title","type":"text","value":"Project"},{"name":"image","label":"Image","type":"image","value":"\/assets\/themes\/starter\/img\/fred2.jpg"},{"name":"category","label":"Category","type":"select","options":{"Web":"Web","Print":"Print","Photography":"Photography"},"value":"Web"}]}

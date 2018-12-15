@@ -6,4 +6,21 @@ category: 1
 rank: 1
 option_set: 5
 options_override: '[]'
-content: "<section class=\"hero{{ fullscreen ? ' fullscreen'}}{{ parallax ? ' jarallax'}} pt-{{ ptop }} pb-{{ pbot }}\" style=\"background-image: url('{{hero_bg}}');\">\n    <div class=\"container\">\n        <div class=\"row{{ center ? '' : ' hero-content' }}\">\n            <div class=\"col-lg-{{ colwidth }}{% if coloffset > 0 %} offset-lg-{{ min( coloffset, 12-colwidth ) }}{% endif %}{{ center ? ' text-center' }}\">\n              <h1 data-fred-name=\"longtitle\" data-fred-target=\"longtitle\" contenteditable=\"true\">[[*longtitle]]</h1>\n              <h2 data-fred-name=\"introtext\" data-fred-target=\"introtext\" contenteditable=\"true\">[[*introtext]]</h2>\n              <div class=\"hero-btn\">\n                {% if hero_btn_link.id %}<a class=\"btn btn-md btn-white btn-bgr\" href=\"{{hero_btn_link.url}}\">{{hero_btn_text}}</a> {% endif %}\n                {% if hero_btn2_link.id %}<a class=\"btn btn-md btn-white-outline btn-bgr\" href=\"{{hero_btn2_link.url}}\">{{hero_btn2_text}}</a> {% endif %}\n              </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"mox-overlay {{hero_overlay_tint}} op{{olopacity}}\"></div>\n</section>"
+
+-----
+
+<section class="hero{{ fullscreen ? ' fullscreen'}}{{ parallax ? ' jarallax'}} pt-{{ ptop }} pb-{{ pbot }}" style="background-image: url('{{hero_bg}}');">
+    <div class="container">
+        <div class="row{{ center ? '' : ' hero-content' }}">
+            <div class="col-lg-{{ colwidth }}{% if coloffset > 0 %} offset-lg-{{ min( coloffset, 12-colwidth ) }}{% endif %}{{ center ? ' text-center' }}">
+              <h1 data-fred-name="longtitle" data-fred-target="longtitle" contenteditable="true">[[*longtitle]]</h1>
+              <h2 data-fred-name="introtext" data-fred-target="introtext" contenteditable="true">[[*introtext]]</h2>
+              <div class="hero-btn">
+                {% if hero_btn_link.id %}<a class="btn btn-md btn-white btn-bgr" href="{{hero_btn_link.url}}">{{hero_btn_text}}</a> {% endif %}
+                {% if hero_btn2_link.id %}<a class="btn btn-md btn-white-outline btn-bgr" href="{{hero_btn2_link.url}}">{{hero_btn2_text}}</a> {% endif %}
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="mox-overlay {{hero_overlay_tint}} op{{olopacity}}"></div>
+</section>

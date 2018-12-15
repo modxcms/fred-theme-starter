@@ -5,4 +5,23 @@ image: 'https://snag.gy/8XZpPh.jpg'
 category: 1
 option_set: 1
 options_override: '[]'
-content: "    <header class=\"masthead {{align}} {{bgcolor}} {{textcolor}} d-flex\" data-fred-render=\"{{published}}\" style=\"background-image: url({{ image }});\">\n      <div class=\"overlay {{hero_overlay_tint}} op{{olopacity}}\"></div>\n      <div class=\"container my-auto\">\n        <div class=\"row\">\n          <div class=\"col-lg-12\">\n            <h1 class=\"text-uppercase\">\n              <strong contenteditable=\"true\" data-fred-name=\"head\" data-fred-target=\"longtitle\">[[*longtitle]]</strong>\n            </h1>\n            <hr style=\"{% if align == 'text-left' %} margin-left: 30px; {% endif %} {% if align == 'text-right' %} margin-right: 30px; {% endif %}\">\n          </div>\n          <div class=\"col-lg-12\">\n            <p class=\"text-faded mb-5\" contenteditable=\"true\" data-fred-name=\"subhead\" data-fred-target=\"description\">[[*description]]</p>\n            <a class=\"btn btn-primary btn-xl {% if linkscroll %} js-scroll-trigger {% endif %}\" href=\"{{ link }}\" contenteditable=\"true\" data-fred-name=\"linktext\">Find Out More</a>\n          </div>\n        </div>\n      </div>\n    </header>"
+
+-----
+
+    <header class="masthead {{align}} {{bgcolor}} {{textcolor}} d-flex" data-fred-render="{{published}}" style="background-image: url({{ image }});">
+      <div class="overlay {{hero_overlay_tint}} op{{olopacity}}"></div>
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="text-uppercase">
+              <strong contenteditable="true" data-fred-name="head" data-fred-target="longtitle">[[*longtitle]]</strong>
+            </h1>
+            <hr style="{% if align == 'text-left' %} margin-left: 30px; {% endif %} {% if align == 'text-right' %} margin-right: 30px; {% endif %}">
+          </div>
+          <div class="col-lg-12">
+            <p class="text-faded mb-5" contenteditable="true" data-fred-name="subhead" data-fred-target="description">[[*description]]</p>
+            <a class="btn btn-primary btn-xl {% if linkscroll %} js-scroll-trigger {% endif %}" href="{{ link }}" contenteditable="true" data-fred-name="linktext">Find Out More</a>
+          </div>
+        </div>
+      </div>
+    </header>
