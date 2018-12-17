@@ -8,4 +8,4 @@
 /index.php
 /manager
 /assets/*
-!/assets/themes
+!/assets/themes/starter
